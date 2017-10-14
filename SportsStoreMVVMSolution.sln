@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B0FB4250-5A1E-4798-B432-99FE2AC30CC9}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions.txt = Instructions.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{29441EE3-E8A5-4FF0-9958-D2D51DA7CFE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportStoreDomainLibrary", "SportStoreDomainLibrary\SportStoreDomainLibrary.csproj", "{A2C1177D-3B50-4B2A-ADBD-B73F2CAB75FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2C1177D-3B50-4B2A-ADBD-B73F2CAB75FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C1177D-3B50-4B2A-ADBD-B73F2CAB75FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C1177D-3B50-4B2A-ADBD-B73F2CAB75FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C1177D-3B50-4B2A-ADBD-B73F2CAB75FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2C1177D-3B50-4B2A-ADBD-B73F2CAB75FE} = {29441EE3-E8A5-4FF0-9958-D2D51DA7CFE1}
+	EndGlobalSection
+EndGlobal
