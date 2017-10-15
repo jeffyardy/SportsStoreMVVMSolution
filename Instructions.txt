@@ -1,10 +1,26 @@
 Project DAL/SportsStoreDomainLibrary
 Nuget Package
 	1. Install-Package EntityFramework
+
 	EntityFramwork
+
 	1.Enable-Migration thi will create the class configuration
-	Enable-Migrations -ContextTypeName SportStoreDomainLibrary.Concrete.SportsStoreDbContext -MigrationsDirectory DataContexts\SportsStoreMigrations
+		Enable-Migrations -ContextTypeName SportStoreDomainLibrary.Concrete.SportsStoreDbContext -MigrationsDirectory DataContexts\SportsStoreMigrations
 	2. Add-Migration this will create a class with the name initialCreate which will have the Table structure
 	Add-Migration -ConfigurationTypeName.SportStoreDomainLibrary.DataContexts.SportsStoreMigrations.Configuration "InitialCreate"
 	3.Create database and table in sql server.
 	Update-Database -ConfigurationTypeName.SportStoreDomainLibrary.DataContexts.SportsStoreMigrations.Configuration -verbose
+	<connectionStrings>
+    <add name="SportsStoreConnection" providerName="System.Data.SqlClient" connectionString="server=M-05; Initial Catalog = SportsStoreDb; Integrated Security=true" />
+  </connectionStrings>
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  https://gist.github.com/MaheshkumarN
+
+  Project MVVM/BasicSportsStoreWpfApp
+
+  References
+	1. SportsStoreDemainLibrary
+Neget Package
+	1. Install-Package EntityFramwork
