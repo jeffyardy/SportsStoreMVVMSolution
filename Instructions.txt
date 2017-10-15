@@ -11,7 +11,7 @@ Nuget Package
 	3.Create database and table in sql server.
 	Update-Database -ConfigurationTypeName.SportStoreDomainLibrary.DataContexts.SportsStoreMigrations.Configuration -verbose
 	<connectionStrings>
-    <add name="SportsStoreConnection" providerName="System.Data.SqlClient" connectionString="server=M-05; Initial Catalog = SportsStoreDb; Integrated Security=true" />
+	<add name="SportsStoreConnection" providerName="System.Data.SqlClient" connectionString="server=M-05; Initial Catalog = SportsStoreDb; Integrated Security=true" />
   </connectionStrings>
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,3 +24,16 @@ Nuget Package
 	1. SportsStoreDemainLibrary
 Neget Package
 	1. Install-Package EntityFramwork
+
+	--------------------------------------------------------------------
+
+	Project MVVM/SportsStoreValidationDIWpfApp
+
+	References
+
+	1. SportsStoreDemainLibrary
+
+	Nuget Package
+
+	1. Install-Package EntityFramework
+	2. Install-Package Unity
