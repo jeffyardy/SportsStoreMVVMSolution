@@ -22,11 +22,26 @@ namespace SportsStoreValidationDIWpfApp.Products
       set { SetProperty(ref _products, value); }
     }
 
-  public ProductListViewModel(IProductRepository productRepository)
+    public RelayCommand<Product> EditProductCommand { get; set; }
+    public event Action<Product> EditProductRequested = delegate { };
+    public RelayCommand<Product> DeleteProductCommand { get; set; }
+
+    public ProductListViewModel(IProductRepository productRepository)
     {
       _productRepository = productRepository;
+      EditProductCommand = new RelayCommand<Product>(OnEditProduct);
+      DeleteProductCommand = new RelayCommand<Product>(OnDeleteProduct);
     }
 
+    private void OnDeleteProduct(Product product)
+    {
+      Products.Remove(product);
+    }
+
+    private void OnEditProduct(Product product)
+    {
+      EditProductRequested(product);
+    }
 
     public void LoadProducts()
     {
